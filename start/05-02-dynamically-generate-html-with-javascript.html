@@ -46,6 +46,18 @@
       }
     ];
 
+    const wrapper = document.querySelector('.wrapper');
+    socials.forEach(user => { 
+      let socialWrapper = document.createElement('div');
+      socialWrapper.style = 'border: 1px solid black';
+
+      let avatar = document.createElement('img');
+      avatar.src = user.avatar;
+      avatar.alt = user.name;
+
+      socialWrapper.appendChild(avatar);
+      wrapper.appendChild(socialWrapper);
+    })
   </script>
 </body>
 
