@@ -9,7 +9,48 @@
 </head>
 
 <body>
-  
+  <form action="" method="post">
+    <!--Contact info-->
+    <div>
+      <!--recipient info-->
+      <div>
+        <h2>Recipient Details</h2>
+        <label for="full-name">Full Name</label> <br>
+        <input type="text" id="full-name" placeholder="Eshraq Ebrahim"><br>
+
+        <label for="telephon">Telephon Number</label><br>
+        <input type="tel" id="telephon" placeholder="+973 6481 6544"><br>
+
+        <label for="adderess">Address</label><br>
+        <input type="text" id="adderess" placeholder="House 5478 Road 356">
+      </div>
+      <!--sender info-->
+      <div>
+        <h2>Sender Details</h2>
+        <label for="sender-name">Full Name</label> <br>
+        <input type="text" id="sender-name" placeholder="Eshraq Ebrahim"><br>
+        
+        <label for="sender-email">Email Address</label><br>
+        <input type="email" id="sender-email" placeholder="eshraq@gmail.com">
+      </div>
+    </div>
+    <!--order info-->
+    <div>
+      <h2>Order</h2>
+      <label for="Bouquet-type">Bouquet type</label><br>
+      <select name="Bouquet-type" id="Bouquet-type">
+        <option value="Basic">Basic Bouquet - $24.99</option>
+        <option value="premium">Premium Bouquet - $49.99</option>
+        <option value="premium-plus">Premium Bouquet + Chocolate - $69.99</option>
+      </select><br>
+
+      <label for="message">Message</label><br>
+      <textarea name="message" id="message"></textarea><br>
+
+      <button type="submit">Checkout</button>
+
+    </div>
+  </form>
 </body>
 
 </html>
